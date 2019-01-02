@@ -1,5 +1,11 @@
 
 .cache/*
-dist/*
 node_modules/*
 env.json
+package-lock.json
+start-dev.js
+.gitignore
+.eslintignore
+.babelrc
+.eslintrc
+.DS_Store
