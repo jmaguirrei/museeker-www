@@ -16,19 +16,21 @@ const {
   BASE_URL,
   MONGO_URI,
   SENDGRID_API_KEY,
+  USE_SERVICE_WORKER,
 } = envFile[nodeEnv];
 
 initServices({ SENDGRID_API_KEY });
 
 const config = {
-  mongoURI: MONGO_URI,
-  httpPort: HTTP_PORT,
-  mongoCollection: 'www',
   baseUrl: BASE_URL,
-  methods,
-  routes,
-  defaultRoute: '',
+  defaultRoute: 'home',
   distFolder: path.join(__dirname, '/../../dist'),
+  httpPort: HTTP_PORT,
+  methods,
+  mongoCollection: 'www',
+  mongoURI: MONGO_URI,
+  routes,
+  useServiceWorker: USE_SERVICE_WORKER,
 };
 
 server.init(config)

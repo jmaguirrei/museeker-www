@@ -1,1 +1,1 @@
-export const routes = {  _root_: props => require('./ui/Container').default(props),  // signin: props => require('./ui/pages/<SignIn>/SignIn').default(props),  // signup: props => require('./ui/pages/<SignUp>/SignUp').default(props),  // welcome: props => require('./ui/pages/<Welcome>/Welcome').default(props),  // forgot: props => require('./ui/pages/<Forgot>/Forgot').default(props),};
+export const routes = {  _root_: props => require('./ui/Container').default(props),  home: props => require('./ui/pages/<Home>/Home').default(props),};
