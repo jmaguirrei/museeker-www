@@ -11,14 +11,21 @@
     "b3": "npm run b3a && npm run b3b",
     "b4": "parcel build ./public/sw.js && parcel build ./public/app.js",
     "build": "NODE_ENV=production npm run b1 && npm run b2 && npm run b3 && npm run b4",
-    "git-initial": "git add . --ignore-errors && git commit -m 'Initial commit' && git push",
+
+    "git-i1": "git add .",
+    "git-i2": "git diff-index --quiet HEAD || git commit -m 'Initial commit'",
+    "git-i3": "git push",
+    "git-initial": "npm run git-i1 && npm run git-i2 && npm run git-i3",
+
     "git-pack": "npm run update-jmaguirrei && npm run build && npm run git-initial",
+
     "i1": "npm install --save @jmaguirrei/belt",
     "i2": "npm install --save @jmaguirrei/ui",
     "i3": "npm install --save @jmaguirrei/store",
     "i4": "npm install --save @jmaguirrei/server",
     "i-prod": "npm install && npm run i1 && npm run i2 && npm run i3 && npm run i4",
     "update-jmaguirrei": "ncu -u '/^@jmaguirrei.*$/'",
+
     "browser": "parcel --no-hmr ./public/app.js ./public/sw.js",
     "start-dev": "nodemon start-dev.js",
     "start-prod": "node start-prod.js"
