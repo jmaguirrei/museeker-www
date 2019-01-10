@@ -27,7 +27,7 @@ const config = {
   distFolder: path.join(__dirname, '/../../dist'),
   httpPort: HTTP_PORT,
   methods,
-  mongoCollection: 'www',
+  moduleName: 'www',
   mongoURI: MONGO_URI,
   routes,
   useServiceWorker: USE_SERVICE_WORKER,
