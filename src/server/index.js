@@ -14,6 +14,7 @@ const envFile = require('../../env.json');
 const {
   HTTP_PORT,
   BASE_URL,
+  BASE_FOLDER,
   MONGO_URI,
   SENDGRID_API_KEY,
   USE_SERVICE_WORKER,
@@ -22,18 +23,17 @@ const {
 initServices({ SENDGRID_API_KEY });
 
 const config = {
-  baseUrl: BASE_URL,
-  defaultRoute: 'home',
-  distFolder: path.join(__dirname, '/../../dist'),
-  httpPort: HTTP_PORT,
-  methods,
   moduleName: 'www',
+  defaultRoute: 'home',
+  baseUrl: BASE_URL,
+  baseFolder: BASE_FOLDER,
+  httpPort: HTTP_PORT,
   mongoURI: MONGO_URI,
-  routes,
   useServiceWorker: USE_SERVICE_WORKER,
+  distFolder: path.join(__dirname, '/../../dist'),
 };
 
-server.init(config)
+server.init({ config, methods, routes })
 .then(() => {
   console.log('Server started, DB running...');
 })
