@@ -11,4 +11,4 @@ parcelRequire=function(e,r,n,t){var i="function"==typeof parcelRequire&&parcelRe
 },{"./log":"uD8j","./getRequestType":"yIJx"}],"Focm":[function(require,module,exports) {
 "use strict";var e=require("./onInstall"),t=require("./onActivate"),s=require("./onFetch");self.cacheName="v1",self.cacheFiles=["./app.js","./index.html","https://fonts.googleapis.com/css?family=Source+Sans+Pro"],self.addEventListener("install",e.onInstall),self.addEventListener("activate",t.onActivate),self.addEventListener("fetch",s.onFetch);
 },{"./onInstall":"iLZu","./onActivate":"+NfH","./onFetch":"D5es"}]},{},["Focm"], null)
-//# sourceMappingURL=/index.map
+//# sourceMappingURL=/sw.map
