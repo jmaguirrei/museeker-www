@@ -1,1 +1,1 @@
-import { ui } from '/client/context';export default ui.hoc({  styles: {    app: `      font-size: 34px;    `,  },  render({ styles }) {    return ui.html`      <div id='app' style=${styles.app}>        Welcome Home boy ... :)      </div>    `;  }});
+export default client => {  return client.hoc({    styles: {      app: `        font-size: 34px;      `,    },    render({ styles }) {      return client.html`        <div id='app' style=${styles.app}>          Welcome Home boy ... :)        </div>      `;    }  });};

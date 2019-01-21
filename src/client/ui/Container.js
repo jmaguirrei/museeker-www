@@ -1,1 +1,0 @@
-import { ui } from '/client/context';import Home from './pages/<Home>/Home';export default ui.hoc({  render() {    return ui.html`      <div id='page-wrapper'>        ${Home()}      </div>    `;  }});

@@ -1,0 +1,1 @@
+export default client => {  return client.hoc({    sections: {      Home: require('./pages/<Home>/Home.js').default,    },    render({ sections }) {      return client.html`        <div id='page-wrapper'>          ${sections.Home()}        </div>      `;    }  });};

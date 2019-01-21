@@ -1,4 +1,0 @@
-
-export { loadData } from './loadData';
-
-
