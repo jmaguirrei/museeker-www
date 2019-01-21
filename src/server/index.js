@@ -15,7 +15,6 @@ server.init({
   env: {
     moduleName: 'www',
     mongoURI: MONGO_URI,
-    distFolder: path.join(__dirname, '/../../dist'),
     rootFolder: path.join(__dirname, '/../../../_root'),
     ...configEnv,
   },
