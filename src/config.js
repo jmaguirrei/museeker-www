@@ -1,8 +1,8 @@
 
 import store from '/client/store';
-// import * as lib from '/client/lib';
-// import * as components from '/client/ui/components';
-// import * as fragments from '/client/ui/fragments';
+import * as lib from '/client/lib';
+import * as components from '/client/ui/components';
+import * as fragments from '/client/ui/fragments';
 import rootComponent from '/client/ui/Root';
 
 export default {
@@ -10,9 +10,9 @@ export default {
   client: {
     store,
     rootComponent,
-    // lib,
-    // components,
-    // fragments,
+    lib,
+    components,
+    fragments,
   },
 
   env: {

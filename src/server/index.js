@@ -20,7 +20,7 @@ server.init({
   },
   config: {
     client: config.client,
-    pages: [ 'home' ],
+    pages: [ 'home', 'agreements', 'faq' ],
     defaultPage: 'home',
   },
 })

@@ -1,1 +1,1 @@
-import * as actions from './actions';export default {  actions,  observables: {    // Domain properties    user_id: '',    language: 'en',    // pages    currentPage: '', // welcome, signin, signup, forgot  },};
+import * as actions from './actions';export default {  actions,  observables: {    // Domain properties    user_id: '',    language: 'en',    // pages    currentPage: 'home', // home, agreements    isMenuOpen: false,  },};

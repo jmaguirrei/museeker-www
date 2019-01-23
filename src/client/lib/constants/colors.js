@@ -1,0 +1,1 @@
+export const Colors = {  GREY_BACKGROUND: 'hsl(214, 14%, 48%)',  BLUE_TEXT: 'hsl(215, 79%, 38%)',};
